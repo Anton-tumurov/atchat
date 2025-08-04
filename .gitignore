@@ -1,0 +1,7 @@
+/keys/
+/messages/
+/peers/
+*.json
+*.log
+*.tmp
+*.pem
