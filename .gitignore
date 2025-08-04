@@ -5,3 +5,7 @@
 *.log
 *.tmp
 *.pem
+/build/
+/dist/
+*.spec
+/atchatgui/
