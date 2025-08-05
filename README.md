@@ -1,4 +1,8 @@
-# @Chat
+<p align="center">
+  <picture>
+    <img src="assets/logo.png" alt="@Chat Logo" width="300">
+  </picture>
+</p>
 
 **@Chat** is a lightweight, modern, peer-to-peer chat application designed for local network communication, such as classrooms or small workgroups. It mimics the user experience of modern messaging apps like WhatsApp while functioning without the need for a centralized server.
 
