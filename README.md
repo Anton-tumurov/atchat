@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <img src="assets/logo.png" alt="@Chat Logo" width="300">
+    <img src="assets/Logo.png" alt="@Chat Logo" width="300">
   </picture>
 </p>
 
