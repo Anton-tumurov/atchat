@@ -3,6 +3,7 @@ from nacl.public import PrivateKey, PublicKey, Box
 from nacl.encoding import HexEncoder
 import customtkinter as ctk
 from tkinter import messagebox
+from PIL import Image
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
@@ -52,10 +53,11 @@ def get_local_ip():
         s.close()
 
 # GUI
-class ChatApp(ctk.CTk):
+class AtChatApp(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("@Chat | Encrypted Group Chat")
+        self.iconbitmap("assets/icon.ico")
         self.geometry("500x300")
         self.protocol("WM_DELETE_WINDOW", self.on_close)
         self.username = ""
@@ -71,7 +73,8 @@ class ChatApp(ctk.CTk):
         self.main_frame = ctk.CTkFrame(self)
         self.main_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
-        ctk.CTkLabel(self.main_frame, text="Welcome to @Chat", font=("Arial", 24)).pack(pady=20)
+        ctk.CTkLabel(self.main_frame, text="Welcome to", font=("Arial", 24)).pack(padx="5")
+        ctk.CTkLabel(self.main_frame, text="", image=ctk.CTkImage(dark_image=Image.open("assets/logo.png"), size=(240, 80))).pack(pady=10)
         ctk.CTkButton(self.main_frame, text="Create Chat Room", command=self.create_room_ui).pack(pady=10)
         ctk.CTkButton(self.main_frame, text="Join Chat Room", command=self.join_room_ui).pack(pady=10)
 
@@ -268,5 +271,5 @@ class ChatApp(ctk.CTk):
         self.destroy()
 
 if __name__ == "__main__":
-    app = ChatApp()
+    app = AtChatApp()
     app.mainloop()
