@@ -22,8 +22,8 @@ When a user creates a chat room, they are assigned a room code which other users
 ## Requirements
 
 - Python 3.9+
-- Tkinter (usually comes preinstalled with Python)
-- `cryptography` package for encryption
+- All dependencies
+- Inno Setup
 
 Install dependencies with:
 

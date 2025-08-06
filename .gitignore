@@ -1,7 +1,7 @@
 *.json
 *.log
 *.tmp
-*.pem
 /build/
 /dist/
 *.spec
+*.exe
